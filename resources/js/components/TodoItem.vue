@@ -2,7 +2,7 @@
 	<span v-bind:class="{'list-group-item-success':todo.completed}">
 		<input type="checkbox" v-on:change="markComplete">
 		{{ todo.title }}
-		<button @click="$emit('del-todo', todo.id)" class="btn btn-danger">Delete</button>
+		<button @click="$emit('del-todo', todo.id)" class="btn btn-danger float-right">Delete</button>
 	</span>
 </template>
 
